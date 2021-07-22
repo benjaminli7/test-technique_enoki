@@ -1,0 +1,46 @@
+.header {
+    height: 100vh;
+    width: 100%;
+    @include media-max("desktop") {
+        //mobile
+        background: url('../../../images/climber-on-el-cap-main-page-web-mobile.png');
+        background-repeat: no-repeat;
+    }
+    @include media-min("desktop") {
+        //desktop
+        background: url('../../../images/climber-on-el-cap-main-page-web-desktop.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    &__title {
+        color: white;
+        line-height: 60px;
+        font-size: 3.5rem;
+        font-weight: 800;
+        text-align: center;
+        position: absolute;
+        @include media-max("desktop") {
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        @include media-min("desktop") {
+            top: 44%;
+            left: 33%;
+        }
+    }
+    #arrow_down {
+        cursor: pointer;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        @include media-max("desktop") {
+            bottom: 40px;
+        }
+
+        @include media-min("desktop") {
+            bottom: 65px;
+        }
+    }
+}

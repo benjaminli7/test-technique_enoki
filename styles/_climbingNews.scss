@@ -1,0 +1,115 @@
+.news {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: $marineblue;
+
+    &__title, &__text {
+        color: white;
+    }
+
+    &__title {
+        font-weight: 800;
+    }
+
+    &__text {
+        font-size: 0.875rem;
+        line-height: 30px;
+    }
+
+    &__btn {
+        border: 0;
+        border-radius: 0px;
+        padding: 25px 75px;
+        color: $darkblue;
+        font-weight: 700;
+        background-color: white;
+        font-size: 0.75rem;
+    }
+
+    @include media-max("desktop") {
+        //mobile
+        padding: 35px 23px 85px 23px;
+
+        &__title {
+            margin-bottom: 45px;
+        }
+
+        &__text {
+            width: 330px;
+            margin-bottom: 60px;
+        }
+    }
+    @include media-min("desktop") {
+        //desktop
+        padding-top: 80px;
+        padding-bottom: 95px;
+        &__title {
+            margin-bottom: 50px;
+        }
+
+        &__text {
+            width: 850px;
+            margin-bottom: 75px;
+        }
+    }
+}
+
+.block {
+    background-color: white;
+    text-align: left;
+    &__title {
+        color: $marineblue;
+        font-weight:700;
+    }
+
+    &__text {
+        color: $grey;
+        font-weight: 600;
+        line-height: 25.5px;
+    }
+
+    @include media-max("desktop") {
+        //mobile
+        width: 299px;
+        margin-bottom: 80px;
+        padding: 33px 25px 25px 25px;
+        &__title {
+            font-size: 1.0625rem;
+        }
+
+        &__text {
+            font-size: 0.6875rem;
+        }
+
+        &__transparent {
+            width: 250px;
+            height: 222px;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+    }
+
+    @include media-min("desktop") {
+        //desktop
+        width: 426px;
+        padding: 45px 35px 35px 35px; 
+        margin-bottom: 87px;
+        &__title {
+            font-size: 1.25rem;
+        }
+
+        &__text {
+            font-size: 0.875rem;
+        }
+
+        &__transparent {
+            width: 355px;
+            height: 286px;
+            margin-top: 45px;
+            margin-bottom: 25px;
+        }
+    }
+}

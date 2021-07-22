@@ -1,0 +1,53 @@
+.climbers {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: $darkblue;
+    &__title {
+        font-weight: 800;
+        font-size: 2.25rem;
+        margin-bottom: 50px;
+    }
+
+    &__text {
+        line-height: 30px;
+        font-size: 0.875rem;
+    }
+    
+    &__btn {
+        border: 0;
+        font-weight: 700;
+        padding: 25px 70px;
+        color: $darkblue;
+        font-size: 0.75rem;
+        background-color: $lightgreen;
+    }
+
+    @include media-max("desktop") {
+        padding: 80px 20px 85px 20px;
+        &__text {
+            width: 332px;
+        }
+    }    
+
+    @include media-min("desktop") {
+        padding: 115px 130px;
+        &__text {
+            width: 692px;
+        }
+    }
+}
+
+.slider {
+    @include media-max("desktop") {
+        margin-top: 50px;
+        margin-bottom: 55px;
+    }    
+
+    @include media-min("desktop") {
+        margin-top: 35px;
+        margin-bottom: 117px;
+    }
+}

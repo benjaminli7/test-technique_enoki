@@ -1,0 +1,23 @@
+.footer {
+    &__title {
+        color: $darkblue;
+        font-weight: 600;
+        text-align: center;
+        padding-top: 35px;
+        border-top: 4px solid $marineblue;
+    }
+
+    @include media-max("desktop") {
+        padding: 46px 22px 56px 19px;
+        &__title {
+            font-size: 1.1875rem;
+        }
+    }
+
+    @include media-min("desktop") {
+        padding: 115px 250px 75px 205px;
+        &__title {
+            font-size: 1.875rem;
+        }
+    }
+}
