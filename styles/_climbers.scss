@@ -23,6 +23,7 @@
         color: $darkblue;
         font-size: 0.75rem;
         background-color: $lightgreen;
+        cursor: pointer;
     }
 
     @include media-max("desktop") {

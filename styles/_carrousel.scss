@@ -6,13 +6,20 @@
         background-color: white;
         text-align:center;
         position: absolute;
-        bottom:10px;
+        bottom:5px;
         width: 218px;
         margin: 0 auto;
         left: 50%;
         transform: translateX(-50%);
-        padding: 10px 0px;
+        padding: 15px 0px 10px 0;
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        h1 {
+            font-weight:700;
+            font-size: 1rem;
+        }
+        sub {
+            font-size: 0.8125rem;
+        }
     }
 
     @include media-max("desktop") {

@@ -6,6 +6,10 @@
           box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-size: 14px;
   font-family: "Montserrat", sans-serif;
@@ -17,20 +21,21 @@ body {
   position: relative;
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 767px) {
   .header {
     background: url("../../../images/climber-on-el-cap-main-page-web-mobile.png");
     background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: bottom right;
+    background-size: cover;
+    background-position: center;
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .header {
     background: url("../../../images/climber-on-el-cap-main-page-web-desktop.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
   }
 }
 
@@ -71,6 +76,14 @@ body {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-name: bounce;
+          animation-name: bounce;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
 }
 
 @media screen and (max-width: 1023px) {
@@ -82,6 +95,36 @@ body {
 @media screen and (min-width: 1024px) {
   .header #arrow_down {
     bottom: 65px;
+  }
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
@@ -121,6 +164,7 @@ body {
   color: #285D81;
   font-size: 0.75rem;
   background-color: #9AF2D3;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1023px) {
@@ -155,15 +199,24 @@ body {
   background-color: white;
   text-align: center;
   position: absolute;
-  bottom: 10px;
+  bottom: 5px;
   width: 218px;
   margin: 0 auto;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  padding: 10px 0px;
+  padding: 15px 0px 10px 0;
   -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.climbers__carrousel .text h1 {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.climbers__carrousel .text sub {
+  font-size: 0.8125rem;
 }
 
 @media screen and (max-width: 1023px) {
@@ -272,6 +325,7 @@ body {
   font-weight: 700;
   background-color: white;
   font-size: 0.75rem;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1023px) {
