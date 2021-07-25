@@ -1,0 +1,76 @@
+.climbers__carrousel {
+    margin: 0 auto;
+    display: flex!important;
+    align-items: center;
+    .text {
+        background-color: white;
+        text-align:center;
+        position: absolute;
+        bottom:10px;
+        width: 218px;
+        margin: 0 auto;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 10px 0px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    @include media-max("desktop") {
+        width: 332px;
+        margin: 55px 0 50px 0;
+        .container {
+            width: 332px;
+            height: 283px;
+            position: relative;
+            &__img {
+                width: 332px;
+                height: 238px;
+            }
+        }
+    }
+
+    @include media-min("desktop") {
+        width: 800px;
+        margin: 35px 0 120px 0;
+        .slide {
+            margin: 0 38px;
+            .container {
+                width: 294px;
+                height: 272px;
+                position: relative;
+                &__img {
+                    width: 294px;
+                    height: 229px;
+                }
+            }
+        }
+    }
+    @include media-min("widescreen") {
+        width:1180px;
+    }
+}
+
+.img1 {
+    background: url('../../../images/5eb56b7401e9c.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img2 {
+    background: url('../../../images/image\ 2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img3 {
+    background: url('../../../images/tommy-caldwell-_c_-corey-rich_1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.img4 {
+    background: url('../../../images/1_kalymnos_is_an_international_climbing_destination_overwatching_the_island_of_telendos-1_0.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}

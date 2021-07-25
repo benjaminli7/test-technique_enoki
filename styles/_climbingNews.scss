@@ -5,13 +5,13 @@
     align-items: center;
     text-align: center;
     background-color: $marineblue;
-
     &__title, &__text {
         color: white;
     }
 
     &__title {
         font-weight: 800;
+        font-size: 2.25rem;
     }
 
     &__text {
@@ -27,6 +27,7 @@
         font-weight: 700;
         background-color: white;
         font-size: 0.75rem;
+        
     }
 
     @include media-max("desktop") {
@@ -41,6 +42,10 @@
             width: 330px;
             margin-bottom: 60px;
         }
+
+        &__btn {
+            margin-top: 150px;
+        }
     }
     @include media-min("desktop") {
         //desktop
@@ -48,18 +53,53 @@
         padding-bottom: 95px;
         &__title {
             margin-bottom: 50px;
+            
         }
 
         &__text {
             width: 850px;
             margin-bottom: 75px;
         }
+
+        &__btn {
+            margin-top: 150px;
+        }
     }
 }
 
+.wrapper {
+    position: relative;
+}
+
+.bg {
+    background: url('../../../images/climber-on-el-cap-main-page-web-block-desktop.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    @include media-max("desktop") {
+        width: 328px;
+        height: 355px;
+        top: 20px;
+    }
+
+    @include media-min("desktop") {
+        width: 467px;
+        height: 452px;
+        top: 35px;
+    }
+}
+
+
 .block {
+    margin: 0 auto;
     background-color: white;
     text-align: left;
+    position: absolute;
+    top:0px;
+    left: 50%;
+    transform: translateX(-50%);
+
     &__title {
         color: $marineblue;
         font-weight:700;
@@ -69,13 +109,21 @@
         color: $grey;
         font-weight: 600;
         line-height: 25.5px;
+    
     }
+
+    &__transparent {
+        background: url('../../../images/block_transparent.png');
+        background-size:cover;
+        background-repeat: no-repeat;
+
+    }
+
 
     @include media-max("desktop") {
         //mobile
         width: 299px;
-        margin-bottom: 80px;
-        padding: 33px 25px 25px 25px;
+        padding: 30px 25px 23px 25px;
         &__title {
             font-size: 1.0625rem;
         }
@@ -95,7 +143,7 @@
     @include media-min("desktop") {
         //desktop
         width: 426px;
-        padding: 45px 35px 35px 35px; 
+        padding: 45px 35px 24px 35px; 
         margin-bottom: 87px;
         &__title {
             font-size: 1.25rem;
@@ -108,8 +156,8 @@
         &__transparent {
             width: 355px;
             height: 286px;
-            margin-top: 45px;
-            margin-bottom: 25px;
+            margin-top: 40px;
+            margin-bottom: 20px;
         }
     }
 }

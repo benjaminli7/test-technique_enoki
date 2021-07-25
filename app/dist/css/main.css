@@ -14,12 +14,15 @@ body {
 .header {
   height: 100vh;
   width: 100%;
+  position: relative;
 }
 
 @media screen and (max-width: 1023px) {
   .header {
     background: url("../../../images/climber-on-el-cap-main-page-web-mobile.png");
     background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom right;
   }
 }
 
@@ -28,7 +31,6 @@ body {
     background: url("../../../images/climber-on-el-cap-main-page-web-desktop.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
   }
 }
 
@@ -39,13 +41,24 @@ body {
   font-weight: 800;
   text-align: center;
   position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+}
+
+@media screen and (max-width: 1023px) {
+  .header__title {
+    top: 40%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
 }
 
 @media screen and (min-width: 1024px) {
   .header__title {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
@@ -128,18 +141,95 @@ body {
   }
 }
 
+.climbers__carrousel {
+  margin: 0 auto;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.climbers__carrousel .text {
+  background-color: white;
+  text-align: center;
+  position: absolute;
+  bottom: 10px;
+  width: 218px;
+  margin: 0 auto;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  padding: 10px 0px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
 @media screen and (max-width: 1023px) {
-  .slider {
-    margin-top: 50px;
-    margin-bottom: 55px;
+  .climbers__carrousel {
+    width: 332px;
+    margin: 55px 0 50px 0;
+  }
+  .climbers__carrousel .container {
+    width: 332px;
+    height: 283px;
+    position: relative;
+  }
+  .climbers__carrousel .container__img {
+    width: 332px;
+    height: 238px;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .slider {
-    margin-top: 35px;
-    margin-bottom: 117px;
+  .climbers__carrousel {
+    width: 800px;
+    margin: 35px 0 120px 0;
   }
+  .climbers__carrousel .slide {
+    margin: 0 38px;
+  }
+  .climbers__carrousel .slide .container {
+    width: 294px;
+    height: 272px;
+    position: relative;
+  }
+  .climbers__carrousel .slide .container__img {
+    width: 294px;
+    height: 229px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .climbers__carrousel {
+    width: 1180px;
+  }
+}
+
+.img1 {
+  background: url("../../../images/5eb56b7401e9c.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.img2 {
+  background: url("../../../images/image 2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.img3 {
+  background: url("../../../images/tommy-caldwell-_c_-corey-rich_1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.img4 {
+  background: url("../../../images/1_kalymnos_is_an_international_climbing_destination_overwatching_the_island_of_telendos-1_0.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .news {
@@ -166,6 +256,7 @@ body {
 
 .news__title {
   font-weight: 800;
+  font-size: 2.25rem;
 }
 
 .news__text {
@@ -194,6 +285,9 @@ body {
     width: 330px;
     margin-bottom: 60px;
   }
+  .news__btn {
+    margin-top: 150px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -208,11 +302,47 @@ body {
     width: 850px;
     margin-bottom: 75px;
   }
+  .news__btn {
+    margin-top: 150px;
+  }
+}
+
+.wrapper {
+  position: relative;
+}
+
+.bg {
+  background: url("../../../images/climber-on-el-cap-main-page-web-block-desktop.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+@media screen and (max-width: 1023px) {
+  .bg {
+    width: 328px;
+    height: 355px;
+    top: 20px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .bg {
+    width: 467px;
+    height: 452px;
+    top: 35px;
+  }
 }
 
 .block {
+  margin: 0 auto;
   background-color: white;
   text-align: left;
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .block__title {
@@ -226,11 +356,16 @@ body {
   line-height: 25.5px;
 }
 
+.block__transparent {
+  background: url("../../../images/block_transparent.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 @media screen and (max-width: 1023px) {
   .block {
     width: 299px;
-    margin-bottom: 80px;
-    padding: 33px 25px 25px 25px;
+    padding: 30px 25px 23px 25px;
   }
   .block__title {
     font-size: 1.0625rem;
@@ -249,7 +384,7 @@ body {
 @media screen and (min-width: 1024px) {
   .block {
     width: 426px;
-    padding: 45px 35px 35px 35px;
+    padding: 45px 35px 24px 35px;
     margin-bottom: 87px;
   }
   .block__title {
@@ -261,8 +396,8 @@ body {
   .block__transparent {
     width: 355px;
     height: 286px;
-    margin-top: 45px;
-    margin-bottom: 25px;
+    margin-top: 40px;
+    margin-bottom: 20px;
   }
 }
 

@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test technique - Enoki</title>
+    <title>Test technique - Enoki / Benjamin LI</title>
     <link rel="stylesheet" href="app/dist/css/main.css">
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 </head>
 <body>
     <header class="header">
@@ -15,8 +18,47 @@
     <section class="climbers">
         <h1 class="climbers__title">Climbers</h1>
         <p class="climbers__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex</p>
-        <div class="slider">
-
+        <div class="climbers__carrousel">
+            <div class="slide">
+                <div class="container">
+                    <div class="container__img img1">
+                        <div class="text">
+                            <h1>Alex Honnold</h1>
+                            <sub>Paris, 2021</sub>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="container">
+                    <div class="container__img img2">
+                        <div class="text">
+                            <h1>Chris Sharma</h1>
+                            <sub>Paris, 2021</sub>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="container">
+                    <div class="container__img img3">
+                        <div class="text">
+                            <h1>Tommy Caldwell</h1>
+                            <sub>Paris, 2021</sub>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="container">
+                    <div class="container__img img4">
+                        <div class="text">
+                            <h1>Benjamin Li</h1>
+                            <sub>Paris, 2021</sub>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <button class="climbers__btn">MORE CLIMBERS</button>
     </section>
@@ -24,10 +66,13 @@
     <section class="news">
         <h1 class="news__title">Climbing News</h1>
         <p class="news__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco taboris nisi ut aliquip ex</p>
-        <div class="block">
-            <h1 class="block__title">Rock climbing in Yosemite</h1>
-            <div class="block__transparent"></div>
-            <p class="block__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et...</p>
+        <div class="wrapper">
+            <div class="bg"></div>
+            <div class="block">
+                <h1 class="block__title">Rock climbing in Yosemite</h1>
+                <div class="block__transparent"></div>
+                <p class="block__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et...</p>
+            </div>               
         </div>
         <button class="news__btn">MORE NEWS</button>
     </section>
@@ -35,8 +80,11 @@
     <footer class="footer">
         <h1 class="footer__title">Enoki Studio - Test Technique</h1>
     </footer>
-
-
-    <script src="scripts/main.js"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>    
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="module" src="scripts/main.js"></script>
 </body>
 </html>

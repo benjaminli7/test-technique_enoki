@@ -39,15 +39,3 @@
         }
     }
 }
-
-.slider {
-    @include media-max("desktop") {
-        margin-top: 50px;
-        margin-bottom: 55px;
-    }    
-
-    @include media-min("desktop") {
-        margin-top: 35px;
-        margin-bottom: 117px;
-    }
-}
