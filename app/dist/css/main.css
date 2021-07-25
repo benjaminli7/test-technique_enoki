@@ -163,6 +163,7 @@ body {
   padding: 25px 70px;
   color: #285D81;
   font-size: 0.75rem;
+  font-family: "Montserrat", sans-serif;
   background-color: #9AF2D3;
   cursor: pointer;
 }
@@ -323,6 +324,7 @@ body {
   padding: 25px 75px;
   color: #285D81;
   font-weight: 700;
+  font-family: "Montserrat", sans-serif;
   background-color: white;
   font-size: 0.75rem;
   cursor: pointer;
